@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+</head>
+<body>
+
+<div style="display: flex;
+ justify-content: space-around;
+margin-bottom: 48px">
+    <a href="./Page-perso.html">Page Perso</a>
+    <a href="./Tableau.html">Tableau</a>
+    <a href="./Formulaire.html">Formulaire</a>
+    <a href="./Video.html">Video</a>
+</div>
+<h1 style="text-align:center">Inscription en Licence</h1>
+<form action="Video.html" methode="post" name="Confirmer">
+    <fieldset style="display: flex; flex-direction: column; align-items: center">
+        <legend align="Center">Informations personnelles</legend>
+        <p> Votre nom : </p>  <input type="text" name="Nom"> <br>
+        <p> Votre prénom : </p>   <input type="text" name="Prénom"> <br>
+        <p> Votre age : </p> <input type="number" name="Age"> <br>
+        <p> Votre adresse e-mail : </p>     <input type="email" name="mail"> <br>
+        <p> Votre site web : </p> <input type="url" name="site"> <br>
+        <p> Votre adresse : </p>   <textarea name="adresse" rows="10" cols="20"> </textarea> <br>
+        <p> Votre date de naissance :</p> <input type="date" name="datenais"> <br>
+        <p> Mot de passe : </p>     <input type="password" name="mot de passe" required=""> <br>
+        <p> Retapez votre mot de passe : </p>      <input type="password" name="mot de passe" required=""> <br>
+    </fieldset>
+
+    <fieldset style=" margin: 36px ;display: flex; flex-direction: column; align-items: center">
+        <legend align="Center"> Gestion des groupes et des options</legend>
+
+        <p> Votre groupe : </p>
+        <div style="display: flex ; flex-direction: row;padding: 15px;margin: 15px;justify-content: space-around" >
+            <input type="radio" name="G1" value="Groupe 1" >
+            <p>Groupe 1</p>
+            <input type="radio" name="G2" value="Groupe 2">
+            <p>Groupe 2</p>
+            <input type="radio" name="G3" value="Groupe 3">
+            <p>Groupe 3</p>
+        </div>
+
+
+
+
+        <p> Numéro de carte d'étudiant </p>      <input type="number" name="num"
+                                                        placeholder="Numero de carte etudiant?">
+        <p>Choissez les options que vous desirer</p>   <select name="options">
+        <option value="JEE"> J2EE</option>
+        <option value="android">Android</option>
+        <option value="Net">.NET</option>
+        <option value="html">HTML5</option>
+        <option value="flex">Flex</option>
+    </select>
+    </fieldset>
+<center>
+    <input type="submit" value="Valider">
+    <input type="reset" value="Réinitialiser">
+</center>
+
+</form>
+</body>
+</html>
