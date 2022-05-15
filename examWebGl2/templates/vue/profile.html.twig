@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block Title %}
+    TP : Profile
+{% endblock %}
+
+{% block Body %}
+
+    {% for content in app.session.flashBag.get('success') %}
+        <div class="alert alert-success" role="alert">
+            {{ content }}
+        </div>
+    {% endfor %}
+    <div class="starter-template">
+        <div class="card" style="width: 18rem;padding-top: 1rem;">
+            <img class="rounded-circle w-50 h-50 m-auto" src="https://icon-library.com/images/user-icon-image/user-icon-image-25.jpg" alt="">
+            <hr>
+            <div class="card-body">
+                <h5 class="card-title">{{ profile.student }}</h5>
+                <p class="card-text">Sujet : <b>{{ profile.title }}</b><br>Chez l'entreprise : <b>{{ profile.entreprise.designation }}</b></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
